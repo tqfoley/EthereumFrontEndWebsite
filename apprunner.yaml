@@ -1,13 +1,6 @@
 version: 1.0
 runtime: nodejs18
-build:
-  commands:
-    build:
-      - echo "No build commands - using Dockerfile"
 run:
-  command: # App Runner will use CMD from Dockerfile
+  command: npm run start
   network:
     port: 3000  # Must match your app's port
-    env-variables:
-      - name: NODE_ENV
-        value: production
