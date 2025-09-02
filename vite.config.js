@@ -7,6 +7,6 @@ export default defineConfig({
     host: "0.0.0.0", // allow external connections
     port: 3000,      // change default from 5173 to 3000
     strictPort: true, // fail if port is in use
-    allowedHosts: "w39zxjs2ij.us-east-1.awsapprunner.com"
+    allowedHosts: true
   }
 });
