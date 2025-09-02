@@ -2,17 +2,3 @@
 docker container for running react 18 and interacting with metamask 
 
 
-```version: 1.0
-runtime: docker
-build:
-  commands:
-    build:
-      - echo "No build commands - using Dockerfile"
-run:
-  runtime-version: latest
-  command: # App Runner will use CMD from Dockerfile
-  network:
-    port: 3000  # Must match your app's port
-    env-variables:
-      - name: NODE_ENV
-        value: production```
