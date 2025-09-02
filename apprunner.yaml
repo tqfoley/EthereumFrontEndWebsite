@@ -1,6 +1,6 @@
 version: 1.0
 runtime: nodejs18
 run:
-  command: npm run dev
+  command:
   network:
     port: 3000  # Must match your app's port
