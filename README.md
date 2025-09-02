@@ -2,7 +2,7 @@
 docker container for running react 18 and interacting with metamask 
 
 
-'''version: 1.0
+`version: 1.0
 runtime: docker
 build:
   commands:
@@ -15,4 +15,4 @@ run:
     port: 3000  # Must match your app's port
     env-variables:
       - name: NODE_ENV
-        value: production'''
+        value: production`
