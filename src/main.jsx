@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import EthereumWalletSender from "./EthereumWalletSender";
+import EthereumWalletSender from "./EthWalletSender";
 import './index.css';  // <-- This line imports the CSS
 
 // Create the root React element
