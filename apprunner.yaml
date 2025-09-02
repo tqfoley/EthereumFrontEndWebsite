@@ -5,7 +5,6 @@ build:
     build:
       - echo "No build commands - using Dockerfile"
 run:
-  runtime-version: latest
   command: # App Runner will use CMD from Dockerfile
   network:
     port: 3000  # Must match your app's port
