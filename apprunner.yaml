@@ -1,5 +1,5 @@
 version: 1.0
-runtime: docker
+runtime: nodejs18
 build:
   commands:
     build:
