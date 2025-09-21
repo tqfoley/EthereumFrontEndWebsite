@@ -9,8 +9,12 @@ npm run dev
 
 ```
 local linux:
+
   sudo ./go.sh
+  
  From container:
+ 
   npm install
+  
   npm run dev
 ```
