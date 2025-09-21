@@ -1,15 +1,33 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-//import EthereumWalletSender from "./EthWalletSender";
-import BaseETHSender from "./web3example";
-import './index.css';  // <-- This line imports the CSS
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import './index.css'
 
-// Create the root React element
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const AppSelector = () => {
+  const apps = [
+    { name: 'Uniswap', path: 'uniswap.html', description: 'View Uniswap Pools and Create' },
+    { name: 'SendOnBase', path: 'sendonbase.html', description: 'Send on Base network' }
+  ]
 
-// Render the App component inside <div id="root"></div>
-root.render(
+  return (
+    <div className="app-selector">
+      <h1>Choose App</h1>
+      <div className="apps-grid">
+        {apps.map((app, index) => (
+          <div key={index} className="app-card">
+            <h2>{app.name}</h2>
+            <p>{app.description}</p>
+            <a href={app.path} className="app-link">
+              Launch App
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BaseETHSender />
+    <AppSelector />
   </React.StrictMode>
-);
+)
